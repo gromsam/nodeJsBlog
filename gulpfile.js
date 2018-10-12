@@ -11,7 +11,7 @@ gulpfile.task('scripts', function() {
     return gulpfile.src([
         'views/bower_components/jquery/dist/jquery.js',
         'views/bower_components/magnific-popup/dist/jquery.magnific-popup.js',
-        'views/js/cookie.jqery.js',
+        'views/bower_components/jquery.cookie/jquery.cookie.js',
         'views/js/move-top.js',
         '/js/easing.js'
     ]).pipe(concat('libs.min.js')).pipe(uglify()).pipe(gulpfile.dest('views/js'));
